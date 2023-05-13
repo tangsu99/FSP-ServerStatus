@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "fsp-server-status",
+  "version": "${version}",
+  "name": "FSP-ServerStatus",
+  "description": "",
+  "authors": [
+    "tangsu99"
+  ],
+  "contact": {
+    "sources": "https://github.com/tangsu99/FSP-ServerStatus"
+  },
+  "license": "MIT",
+  "icon": "assets/fspServerStatus/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "server": [
+      "cn.tangsu99.fspServerStatus.FSPServerStatus"
+    ]
+  },
+  "mixins": [
+    "fspServerStatus.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.0",
+    "fabric": "*",
+    "minecraft": "1.18.x"
+  }
+}
